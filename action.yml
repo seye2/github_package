@@ -1,0 +1,15 @@
+name: "Slack message"
+description: "Send job results on Slack via Incoming Webhooks 🔔"
+inputs:
+  ACTION_NAME:
+    description: "Name of the action for a more descriptive message"
+    required: true
+  JOB:
+    description: "JSON-stringified `job` variable. Must be passed to output the actual status of the job"
+    required: true
+  SLACK_WEBHOOK_URL:
+    description: "URL of the Incoming Webhook provided by Slack"
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"

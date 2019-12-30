@@ -1,0 +1,14 @@
+{
+  "name": "@seye2/github_package",
+  "version": "1.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:seye2/github_package.git",
+  "author": "남동훈 <seye1479@gmail.com>",
+  "license": "MIT",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "dependencies": {
+    "@actions/core": "1.1.3",
+    "@actions/github": "1.1.0",
+    "@slack/webhook": "5.0.2"
+  }
+}
